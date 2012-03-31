@@ -1,0 +1,1399 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+                      "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+  <head>
+    <title>Enter Bug: caTissue</title>
+
+
+<link rel="Top" href="https://bugzilla.wustl.edu/bugzilla/">
+
+  
+
+  
+
+
+  
+
+
+  
+    <link rel="Saved&nbsp;Searches" title="My Bugs"
+          href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=forei%40mail.nih.gov&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=forei%40mail.nih.gov">
+
+    <link rel="Saved&nbsp;Searches" 
+          title="Build issues"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Build%20issues">
+    <link rel="Saved&nbsp;Searches" 
+          title="C1 and C2 and no target"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=C1%20and%20C2%20and%20no%20target">
+    <link rel="Saved&nbsp;Searches" 
+          title="New caTissue since 1-Jul-10"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=New%20caTissue%20since%201-Jul-10">
+    <link rel="Saved&nbsp;Searches" 
+          title="pile 1"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=pile%201">
+    <link rel="Saved&nbsp;Searches" 
+          title="SPP"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=SPP">
+    <link rel="Saved&nbsp;Searches" 
+          title="Suite P1P2 not fixed"
+          href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Suite%20P1P2%20not%20fixed">
+
+
+   <link rel="Administration" title="Products" href="editproducts.cgi"><link rel="Administration" title="Flag Types"   
+                  href="editflagtypes.cgi"><link rel="Administration" title="Sanity Check"  
+                  href="sanitycheck.cgi">
+
+
+    
+
+    
+      <link href="skins/standard/global.css"
+            rel="stylesheet"
+            type="text/css">
+      <link href="skins/standard/create_attachment.css"
+            rel="stylesheet"
+            type="text/css">
+      <link href="skins/standard/yui/calendar.css"
+            rel="stylesheet"
+            type="text/css">
+    <!--[if lte IE 7]>
+      
+      <link href="skins/standard/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+    
+        <link href="skins/standard/global.css"
+              rel="alternate stylesheet"
+              title="Classic"
+              type="text/css">
+        <link href="skins/standard/create_attachment.css"
+              rel="alternate stylesheet"
+              title="Classic"
+              type="text/css">
+        <link href="skins/standard/yui/calendar.css"
+              rel="alternate stylesheet"
+              title="Classic"
+              type="text/css">
+      <!--[if lte IE 7]>
+      
+        <link href="skins/standard/IE-fixes.css"
+              rel="alternate stylesheet"
+              title="Classic"
+              type="text/css">
+      <![endif]-->
+
+    
+        
+            <link href="skins/contrib/Dusk/global.css"
+                  rel="stylesheet"
+                  title="Dusk"
+                  type="text/css">
+            <link href="skins/contrib/Dusk/create_attachment.css"
+                  rel="stylesheet"
+                  title="Dusk"
+                  type="text/css">
+            <link href="skins/contrib/Dusk/yui/calendar.css"
+                  rel="stylesheet"
+                  title="Dusk"
+                  type="text/css">
+        <!--[if lte IE 7]>
+          
+          <link href="skins/contrib/Dusk/IE-fixes.css"
+                rel="stylesheet"
+                title="Dusk"
+                type="text/css">
+        <![endif]-->
+
+    
+
+    
+        <link href="skins/custom/global.css" rel="stylesheet" type="text/css">
+        <link href="skins/custom/create_attachment.css" rel="stylesheet" type="text/css">
+        <link href="skins/custom/yui/calendar.css" rel="stylesheet" type="text/css">
+    <!--[if lte IE 7]>
+      
+      <link href="skins/custom/IE-fixes.css"
+            rel="stylesheet"
+            type="text/css">
+    <![endif]-->
+
+
+
+        <script src="js/attachment.js" type="text/javascript"></script>
+        <script src="js/util.js" type="text/javascript"></script>
+        <script src="js/yui/yahoo-dom-event.js" type="text/javascript"></script>
+        <script src="js/yui/calendar.js" type="text/javascript"></script>
+        <script src="js/field.js" type="text/javascript"></script>
+        <script type="text/javascript">
+          YAHOO.namespace('bugzilla');
+          if( YAHOO.env.ua.gecko )
+            YAHOO.util.Event._simpleRemove(window, "unload", YAHOO.util.Event._unload);
+        </script>
+
+    
+
+    
+    <link rel="search" type="application/opensearchdescription+xml"
+                       title="Bugzilla" href="./search_plugin.cgi">
+    <link rel="shortcut icon" href="images/favicon.ico" >
+  </head>
+
+
+
+  <body onload=""
+        class="bugzilla-wustl-edu-bugzilla">
+
+
+
+
+<div id="header">
+<div id="banner">
+  </div>
+
+<table border="0" cellspacing="0" cellpadding="0" id="titles">
+<tr>
+    <td id="title">
+      <p>Bugzilla &ndash; Enter Bug: caTissue</p>
+    </td>
+
+
+</tr>
+</table>
+<ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_top" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_top"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li></li>
+
+
+    <li><span class="separator">| </span><a href="userprefs.cgi">Preferences</a></li>
+      <li><span class="separator">| </span><a href="admin.cgi">Administration</a></li>
+<li>
+        <span class="separator">| </span>
+        <a href="docs/en/html/bugreports.html" target="_blank">Help</a>
+      </li>
+
+    <li>
+      <span class="separator">| </span>
+        <a href="relogin.cgi">Log&nbsp;out</a>
+        forei&#64;mail.nih.gov</li>
+</ul>
+
+</div>
+
+<div id="bugzilla-body">
+
+<script type="text/javascript">
+<!--
+
+var initialowners = new Array(31);
+var last_initialowner;
+var initialccs = new Array(31);
+var components = new Array(31);
+var comp_desc = new Array(31);
+var flags = new Array(31);
+    var initialqacontacts = new Array(31);
+    var last_initialqacontact;
+    components[0] = "Admin";
+    comp_desc[0] = "Administrative Component Alpha release 2";
+    initialowners[0] = "catissue_bugs\x40mga.wustl.edu";
+    flags[0] = [];
+        initialqacontacts[0] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[0] = "";
+
+    components[1] = "API";
+    comp_desc[1] = "HTTP and caCORE Like API";
+    initialowners[1] = "catissue_bugs\x40mga.wustl.edu";
+    flags[1] = [];
+        initialqacontacts[1] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[1] = "";
+
+    components[2] = "Array";
+    comp_desc[2] = "Bugs related to Specimen Array";
+    initialowners[2] = "catissue_bugs\x40mga.wustl.edu";
+    flags[2] = [];
+        initialqacontacts[2] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[2] = "";
+
+    components[3] = "Biospecimen";
+    comp_desc[3] = "Biospecimen Module Alpha release 2";
+    initialowners[3] = "catissue_bugs\x40mga.wustl.edu";
+    flags[3] = [];
+        initialqacontacts[3] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[3] = "";
+
+    components[4] = "Build";
+    comp_desc[4] = "Building caTissue from source";
+    initialowners[4] = "joshua.phillips\x40semanticbits.com";
+    flags[4] = [];
+        initialqacontacts[4] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[4] = "catissue_bugs\x40mga.wustl.edu";
+
+    components[5] = "BulkOperations";
+    comp_desc[5] = "Allows bulk uploads";
+    initialowners[5] = "catissue_bugs\x40mga.wustl.edu";
+    flags[5] = [];
+        initialqacontacts[5] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[5] = "";
+
+    components[6] = "C3PR Integration";
+    comp_desc[6] = "C3PR Integration";
+    initialowners[6] = "joshua.phillips\x40semanticbits.com";
+    flags[6] = [];
+        initialqacontacts[6] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[6] = "catissue\x40semanticbits.com";
+
+    components[7] = "caGrid";
+    comp_desc[7] = "caGrid related bugs";
+    initialowners[7] = "joshua.phillips\x40semanticbits.com";
+    flags[7] = [];
+        initialqacontacts[7] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[7] = "catissue\x40semanticbits.com";
+
+    components[8] = "CA_Model";
+    comp_desc[8] = "Issues related to CA model";
+    initialowners[8] = "catissue_bugs\x40mga.wustl.edu";
+    flags[8] = [];
+        initialqacontacts[8] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[8] = "";
+
+    components[9] = "CDMSIntegration";
+    comp_desc[9] = "CDMS Integration Component";
+    initialowners[9] = "catissue_bugs\x40mga.wustl.edu";
+    flags[9] = [];
+        initialqacontacts[9] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[9] = "";
+
+    components[10] = "CDMSSampleImpl";
+    comp_desc[10] = "Sample implementation of CDMS used for testing integration with caTissue";
+    initialowners[10] = "catissue_bugs\x40mga.wustl.edu";
+    flags[10] = [];
+        initialqacontacts[10] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[10] = "";
+
+    components[11] = "CTRP Integration";
+    comp_desc[11] = "CTRP Integration";
+    initialowners[11] = "joshua.phillips\x40semanticbits.com";
+    flags[11] = [];
+        initialqacontacts[11] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[11] = "catissue\x40semanticbits.com";
+
+    components[12] = "DE Creation";
+    comp_desc[12] = "Dynamic Extensions";
+    initialowners[12] = "dynamicext_bugs\x40mga.wustl.edu";
+    flags[12] = [];
+        initialqacontacts[12] = "dynamicext_bugs\x40mga.wustl.edu";
+
+    initialccs[12] = "";
+
+    components[13] = "DE data entry";
+    comp_desc[13] = "DE data entry";
+    initialowners[13] = "dynamicext_bugs\x40mga.wustl.edu";
+    flags[13] = [];
+        initialqacontacts[13] = "dynamicext_bugs\x40mga.wustl.edu";
+
+    initialccs[13] = "";
+
+    components[14] = "Deployment";
+    comp_desc[14] = "Deployment guide and ant scripts used for installation and configuration of caTissue.";
+    initialowners[14] = "catissue_bugs\x40mga.wustl.edu";
+    flags[14] = [];
+        initialqacontacts[14] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[14] = "";
+
+    components[15] = "Documentation";
+    comp_desc[15] = "User manual, technical guide, etc";
+    initialowners[15] = "dmulvihill\x40path.wustl.edu";
+    flags[15] = [];
+        initialqacontacts[15] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[15] = "";
+
+    components[16] = "GSID";
+    comp_desc[16] = "GSID";
+    initialowners[16] = "joshua.phillips\x40semanticbits.com";
+    flags[16] = [];
+        initialqacontacts[16] = "catissue\x40semanticbits.com";
+
+    initialccs[16] = "catissue_bugs\x40mga.wustl.edu";
+
+    components[17] = "IDPSampleImpl";
+    comp_desc[17] = "Bugs logged on sample implementation used to test IDP integration with catissue";
+    initialowners[17] = "catissue_bugs\x40mga.wustl.edu";
+    flags[17] = [];
+        initialqacontacts[17] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[17] = "";
+
+    components[18] = "Infrastructure";
+    comp_desc[18] = "All infrastructure related issues like session handling, connectio n pooling, action classes and so forth";
+    initialowners[18] = "catissue_bugs\x40mga.wustl.edu";
+    flags[18] = [];
+        initialqacontacts[18] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[18] = "";
+
+    components[19] = "Invalid-Security Module";
+    comp_desc[19] = "CSM";
+    initialowners[19] = "catissue_bugs\x40mga.wustl.edu";
+    flags[19] = [];
+        initialqacontacts[19] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[19] = "";
+
+    components[20] = "KeywordSearch";
+    comp_desc[20] = "This is the original Titli Search";
+    initialowners[20] = "catissue_bugs\x40mga.wustl.edu";
+    flags[20] = [];
+        initialqacontacts[20] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[20] = "";
+
+    components[21] = "Login";
+    comp_desc[21] = "sign up and login";
+    initialowners[21] = "catissue_bugs\x40mga.wustl.edu";
+    flags[21] = [];
+        initialqacontacts[21] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[21] = "catissue_bugs\x40mga.wustl.edu";
+
+    components[22] = "MAGE TAB Export";
+    comp_desc[22] = "MAGE TAB export feature added in v20";
+    initialowners[22] = "joshua.phillips\x40semanticbits.com";
+    flags[22] = [];
+        initialqacontacts[22] = "catissue\x40semanticbits.com";
+
+    initialccs[22] = "catissue_bugs\x40mga.wustl.edu";
+
+    components[23] = "Ordering";
+    comp_desc[23] = "Ordering System";
+    initialowners[23] = "catissue_bugs\x40mga.wustl.edu";
+    flags[23] = [];
+        initialqacontacts[23] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[23] = "";
+
+    components[24] = "PublicPrivateMigrator";
+    comp_desc[24] = "This is the component for logging bugs for the public-private migration tool";
+    initialowners[24] = "catissue_bugs\x40mga.wustl.edu";
+    flags[24] = [];
+        initialqacontacts[24] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[24] = "";
+
+    components[25] = "Query";
+    comp_desc[25] = "Advanced Query Pages";
+    initialowners[25] = "catissue_bugs\x40mga.wustl.edu";
+    flags[25] = [];
+        initialqacontacts[25] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[25] = "";
+
+    components[26] = "S&T";
+    comp_desc[26] = "Shipping and Tracking";
+    initialowners[26] = "catissue_bugs\x40mga.wustl.edu";
+    flags[26] = [];
+        initialqacontacts[26] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[26] = "";
+
+    components[27] = "Simple Query";
+    comp_desc[27] = "QueryPages";
+    initialowners[27] = "catissue_bugs\x40mga.wustl.edu";
+    flags[27] = [];
+        initialqacontacts[27] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[27] = "";
+
+    components[28] = "Specimen Processing Procedures";
+    comp_desc[28] = "Specimen Processing Procedures introduced in caTissue v2.0";
+    initialowners[28] = "catissue_bugs\x40mga.wustl.edu";
+    flags[28] = [];
+        initialqacontacts[28] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[28] = "catissue_bugs\x40mga.wustl.edu";
+
+    components[29] = "SPR_Handling";
+    comp_desc[29] = "caTIES";
+    initialowners[29] = "catissue_bugs\x40mga.wustl.edu";
+    flags[29] = [];
+        initialqacontacts[29] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[29] = "";
+
+    components[30] = "Storage Container (Admin)";
+    comp_desc[30] = "Bugs related to Storage Container";
+    initialowners[30] = "catissue_bugs\x40mga.wustl.edu";
+    flags[30] = [];
+        initialqacontacts[30] = "catissue_bugs\x40mga.wustl.edu";
+
+    initialccs[30] = "";
+
+
+function set_assign_to() {
+    // Based on the selected component, fill the "Assign To:" field
+    // with the default component owner, and the "QA Contact:" field
+    // with the default QA Contact. It also selectively enables flags.
+    var form = document.Create;
+    var assigned_to = form.assigned_to.value;
+
+    var qa_contact = form.qa_contact.value;
+
+    var index = -1;
+    if (form.component.type == 'select-one') {
+        index = form.component.selectedIndex;
+    } else if (form.component.type == 'hidden') {
+        // Assume there is only one component in the list
+        index = 0;
+    }
+    if (index != -1) {
+        var owner = initialowners[index];
+        var component = components[index];
+        if (assigned_to == last_initialowner
+            || assigned_to == owner
+            || assigned_to == '') {
+            form.assigned_to.value = owner;
+            last_initialowner = owner;
+        }
+
+        document.getElementById('initial_cc').innerHTML = initialccs[index];
+        document.getElementById('comp_desc').innerHTML = comp_desc[index];
+
+            var contact = initialqacontacts[index];
+            if (qa_contact == last_initialqacontact
+                || qa_contact == contact
+                || qa_contact == '') {
+                  form.qa_contact.value = contact;
+                  last_initialqacontact = contact;
+            }
+
+        // First, we disable all flags. Then we re-enable those
+        // which are available for the selected component.
+        var inputElements = document.getElementsByTagName("select");
+        var inputElement, flagField;
+        for ( var i=0 ; i<inputElements.length ; i++ ) {
+            inputElement = inputElements.item(i);
+            if (inputElement.name.search(/^flag_type-(\d+)$/) != -1) {
+                var id = inputElement.name.replace(/^flag_type-(\d+)$/, "$1");
+                inputElement.disabled = true;
+                // Also disable the requestee field, if it exists.
+                inputElement = document.getElementById("requestee_type-" + id);
+                if (inputElement) inputElement.disabled = true;
+            }
+        }
+        // Now enable flags available for the selected component.
+        for (var i = 0; i < flags[index].length; i++) {
+            flagField = document.getElementById("flag_type-" + flags[index][i]);
+            // Do not enable flags the user cannot set nor request.
+            if (flagField && flagField.options.length > 1) {
+                flagField.disabled = false;
+                // Re-enabling the requestee field depends on the status
+                // of the flag.
+                toggleRequesteeField(flagField, 1);
+            }
+        }
+    }
+}
+
+function handleWantsAttachment(wants_attachment) {
+    if (wants_attachment) {
+        document.getElementById('attachment_false').style.display = 'none';
+        document.getElementById('attachment_true').style.display = 'block';
+    }
+    else {
+        document.getElementById('attachment_false').style.display = 'block';
+        document.getElementById('attachment_true').style.display = 'none';
+        clearAttachmentFields();
+    }
+}
+
+-->
+</script>
+
+<form name="Create" id="Create" method="post" action="post_bug.cgi"
+      enctype="multipart/form-data">
+<input type="hidden" name="product" value="caTissue">
+<input type="hidden" name="token" value="z2pBkfs3to">
+
+<table cellspacing="4" cellpadding="2" border="0">
+<tbody>
+  <tr>
+    <td colspan="4">
+    Before reporting a bug, please read the 
+<a href="page.cgi?id=bug-writing.html">bug writing guidelines</a>, please look at the list of
+<a href="duplicates.cgi">most frequently reported bugs</a>, and please
+<a href="query.cgi">search</a> for the bug.
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <th>Product:</th>
+    <td width="10%">caTissue</td>
+
+    <th>Reporter:</th>
+    <td width="100%">forei&#64;mail.nih.gov</td>
+  </tr>
+
+  
+  <tr>
+    <th>
+      <a href="describecomponents.cgi?product=caTissue">
+      Component</a>:
+    </th>
+    <td>
+      <select name="component" onchange="set_assign_to();" size="7">
+        
+
+          <option value="Admin">Admin          </option>
+          <option value="API">API          </option>
+          <option value="Array">Array          </option>
+          <option value="Biospecimen">Biospecimen          </option>
+          <option value="Build">Build          </option>
+          <option value="BulkOperations">BulkOperations          </option>
+          <option value="C3PR Integration">C3PR Integration          </option>
+          <option value="caGrid">caGrid          </option>
+          <option value="CA_Model">CA_Model          </option>
+          <option value="CDMSIntegration">CDMSIntegration          </option>
+          <option value="CDMSSampleImpl">CDMSSampleImpl          </option>
+          <option value="CTRP Integration">CTRP Integration          </option>
+          <option value="DE Creation">DE Creation          </option>
+          <option value="DE data entry">DE data entry          </option>
+          <option value="Deployment">Deployment          </option>
+          <option value="Documentation">Documentation          </option>
+          <option value="GSID">GSID          </option>
+          <option value="IDPSampleImpl">IDPSampleImpl          </option>
+          <option value="Infrastructure">Infrastructure          </option>
+          <option value="Invalid-Security Module">Invalid-Security Module          </option>
+          <option value="KeywordSearch">KeywordSearch          </option>
+          <option value="Login">Login          </option>
+          <option value="MAGE TAB Export">MAGE TAB Export          </option>
+          <option value="Ordering">Ordering          </option>
+          <option value="PublicPrivateMigrator">PublicPrivateMigrator          </option>
+          <option value="Query">Query          </option>
+          <option value="S&amp;T">S&amp;T          </option>
+          <option value="Simple Query">Simple Query          </option>
+          <option value="Specimen Processing Procedures">Specimen Processing Procedures          </option>
+          <option value="SPR_Handling">SPR_Handling          </option>
+          <option value="Storage Container (Admin)">Storage Container (Admin)          </option>
+      </select>
+    </td>
+
+    <td colspan="2">
+      
+      <table>
+        <tr>
+          <td>
+            <fieldset>
+              <legend>Component Description</legend>
+              <div id="comp_desc" class="comment">Select a component to read its description.</div>
+            </fieldset>
+          </td>
+        </tr>
+      </table>
+    </td>
+  </tr>
+
+  <tr>
+    <th rowspan="3">Version:</th>
+    <td rowspan="3">
+      <select name="version" size="5">
+          <option value="1.1.2.fc1">1.1.2.fc1          </option>
+          <option value="1.1.2.fc2">1.1.2.fc2          </option>
+          <option value="Alpha-v0.1">Alpha-v0.1          </option>
+          <option value="Alpha-v0.2">Alpha-v0.2          </option>
+          <option value="Beta 1.0">Beta 1.0          </option>
+          <option value="caTissueCorev1.2">caTissueCorev1.2          </option>
+          <option value="caTissueCoreV1.2- Batch_One">caTissueCoreV1.2- Batch_One          </option>
+          <option value="caTissueCoreV1.2- Batch_Three">caTissueCoreV1.2- Batch_Three          </option>
+          <option value="caTissueCoreV1.2- Batch_Two">caTissueCoreV1.2- Batch_Two          </option>
+          <option value="caTissueCorev1.2-RC1">caTissueCorev1.2-RC1          </option>
+          <option value="caTissueCorev1.2-RC2">caTissueCorev1.2-RC2          </option>
+          <option value="caTissueCorev1.2.0.1">caTissueCorev1.2.0.1          </option>
+          <option value="caTissueCorev1.2.1-LSD">caTissueCorev1.2.1-LSD          </option>
+          <option value="caTissueCorev1.2_Performance_Build">caTissueCorev1.2_Performance_Build          </option>
+          <option value="caTissueCorev120-internal-LSD">caTissueCorev120-internal-LSD          </option>
+          <option value="caTissueCoreV 1.2- WashU">caTissueCoreV 1.2- WashU          </option>
+          <option value="caTissue_WU_v1.2.3">caTissue_WU_v1.2.3          </option>
+          <option value="Code Jamboree">Code Jamboree          </option>
+          <option value="core V1.2.2 LSD">core V1.2.2 LSD          </option>
+          <option value="Final 1.0">Final 1.0          </option>
+          <option value="iLSD_March31">iLSD_March31          </option>
+          <option value="Indiana_internal_10_jan">Indiana_internal_10_jan          </option>
+          <option value="INVALID_VERSION1">INVALID_VERSION1          </option>
+          <option value="INVALID_VERSION2">INVALID_VERSION2          </option>
+          <option value="INVALID_VERSION3">INVALID_VERSION3          </option>
+          <option value="INVALID_VERSION4">INVALID_VERSION4          </option>
+          <option value="INVALID_VERSION5">INVALID_VERSION5          </option>
+          <option value="INVALID_VERSION6">INVALID_VERSION6          </option>
+          <option value="INVALID_VERSION7">INVALID_VERSION7          </option>
+          <option value="INVALID_VERSION8">INVALID_VERSION8          </option>
+          <option value="iSuiteV11E1">iSuiteV11E1          </option>
+          <option value="iSuitev11_RC2">iSuitev11_RC2          </option>
+          <option value="iSuitev11_RC3">iSuitev11_RC3          </option>
+          <option value="iSuitev11_S1">iSuitev11_S1          </option>
+          <option value="iSuitev11_S2">iSuitev11_S2          </option>
+          <option value="iSuitev11_S2_1">iSuitev11_S2_1          </option>
+          <option value="iSuitev11_S3_1">iSuitev11_S3_1          </option>
+          <option value="iSuitev11_S3_2">iSuitev11_S3_2          </option>
+          <option value="iSuitev11_S3_3">iSuitev11_S3_3          </option>
+          <option value="iSuitev11_S4">iSuitev11_S4          </option>
+          <option value="iSuitev11_S5">iSuitev11_S5          </option>
+          <option value="iSuitev11_S6">iSuitev11_S6          </option>
+          <option value="iSuite_6Feb">iSuite_6Feb          </option>
+          <option value="iSuite_Jan11">iSuite_Jan11          </option>
+          <option value="iSuite_Jan18">iSuite_Jan18          </option>
+          <option value="iSuite_Jan24">iSuite_Jan24          </option>
+          <option value="iSuite_RC2">iSuite_RC2          </option>
+          <option value="iSuite_RC3">iSuite_RC3          </option>
+          <option value="SuiteV1_1_1">SuiteV1_1_1          </option>
+          <option value="SuiteV11_C1">SuiteV11_C1          </option>
+          <option value="Suitev11_C2">Suitev11_C2          </option>
+          <option value="SuiteV11_E1">SuiteV11_E1          </option>
+          <option value="Suitev11_RC1">Suitev11_RC1          </option>
+          <option value="Suitev11_RC2">Suitev11_RC2          </option>
+          <option value="Suitev11_RC3">Suitev11_RC3          </option>
+          <option value="Suitev11_RC4">Suitev11_RC4          </option>
+          <option value="Suite_1Jan-internal">Suite_1Jan-internal          </option>
+          <option value="Suite_Dec17">Suite_Dec17          </option>
+          <option value="Suite_Jan03">Suite_Jan03          </option>
+          <option value="Suite_Nov07">Suite_Nov07          </option>
+          <option value="Suite_Nov28">Suite_Nov28          </option>
+          <option value="Suite_RC1">Suite_RC1          </option>
+          <option value="Suite_RC2">Suite_RC2          </option>
+          <option value="Suite_RC3">Suite_RC3          </option>
+          <option value="Suite_V11_I2">Suite_V11_I2          </option>
+          <option value="trunk">trunk          </option>
+          <option value="v1.1">v1.1          </option>
+          <option value="v1.1.1">v1.1.1          </option>
+          <option value="v1.1.2.RC1">v1.1.2.RC1          </option>
+          <option value="v1.1.2.RC2">v1.1.2.RC2          </option>
+          <option value="v1.1.p">v1.1.p          </option>
+          <option value="v1.1_Feb_02_2007(RC2)">v1.1_Feb_02_2007(RC2)          </option>
+          <option value="v1.2.1">v1.2.1          </option>
+          <option value="v1.2.i1.w1">v1.2.i1.w1          </option>
+          <option value="v1.2.i1.w2">v1.2.i1.w2          </option>
+          <option value="v1.2.i2.w1">v1.2.i2.w1          </option>
+          <option value="v1.2.i2.w2">v1.2.i2.w2          </option>
+          <option value="v1.2.i3.w1">v1.2.i3.w1          </option>
+          <option value="v1.2.i3.w2">v1.2.i3.w2          </option>
+          <option value="v1.2.i4.w1">v1.2.i4.w1          </option>
+          <option value="v1.2.i5.w1">v1.2.i5.w1          </option>
+          <option value="v1.2.i5.w2">v1.2.i5.w2          </option>
+          <option value="v1.2.i6.w1">v1.2.i6.w1          </option>
+          <option value="v1.2.rc1">v1.2.rc1          </option>
+          <option value="v1.2.rc2">v1.2.rc2          </option>
+          <option value="v1.2.rc3">v1.2.rc3          </option>
+          <option value="v1.2.rc4">v1.2.rc4          </option>
+          <option value="v1.2.RC5">v1.2.RC5          </option>
+          <option value="v1.2.RC6">v1.2.RC6          </option>
+          <option value="v1.2.RC6.InterimBuild">v1.2.RC6.InterimBuild          </option>
+          <option value="v2.0">v2.0          </option>
+          <option value="v2.0.i1.w1">v2.0.i1.w1          </option>
+          <option value="v2.0.i1.w2">v2.0.i1.w2          </option>
+          <option value="v2.0.i1.w3">v2.0.i1.w3          </option>
+          <option value="v2.0.i2.w1">v2.0.i2.w1          </option>
+          <option value="v2.0.i2.w2">v2.0.i2.w2          </option>
+          <option value="v2.0.i2.w3">v2.0.i2.w3          </option>
+          <option value="v2.0.i3.w1">v2.0.i3.w1          </option>
+          <option value="v2.0.i3.w2">v2.0.i3.w2          </option>
+          <option value="v2.0.i3.w3">v2.0.i3.w3          </option>
+          <option value="v2.0.i4.w1">v2.0.i4.w1          </option>
+          <option value="v2.0.i4.w2">v2.0.i4.w2          </option>
+          <option value="v2.0.i4.w3">v2.0.i4.w3          </option>
+          <option value="v2.0.i5.w1">v2.0.i5.w1          </option>
+          <option value="v2.0.i5.w2">v2.0.i5.w2          </option>
+          <option value="v2.0.i5.w3">v2.0.i5.w3          </option>
+          <option value="v2.0.i6.w1">v2.0.i6.w1          </option>
+          <option value="v2.0.i6.w2">v2.0.i6.w2          </option>
+          <option value="v2.0.i6.w3">v2.0.i6.w3          </option>
+          <option value="v2.0.i7.w1">v2.0.i7.w1          </option>
+          <option value="v2.0.i7.w2">v2.0.i7.w2          </option>
+          <option value="v2.0.i7.w3">v2.0.i7.w3          </option>
+          <option value="v2.0.i8.w1">v2.0.i8.w1          </option>
+          <option value="v2.0.i8.w2">v2.0.i8.w2          </option>
+          <option value="v2.0.i8.w3">v2.0.i8.w3          </option>
+          <option value="v2.0.i9.w1">v2.0.i9.w1          </option>
+          <option value="v2.0.i9.w2">v2.0.i9.w2          </option>
+          <option value="v2.0.i9.w3">v2.0.i9.w3          </option>
+          <option value="v2.0.i12.w2">v2.0.i12.w2          </option>
+          <option value="v2.0.i12.w3">v2.0.i12.w3          </option>
+          <option value="v2.0.i13.w1">v2.0.i13.w1          </option>
+          <option value="v2.0.i13.w3">v2.0.i13.w3          </option>
+          <option value="v2.0.i14.w1">v2.0.i14.w1          </option>
+          <option value="v2.0.i14.w2">v2.0.i14.w2          </option>
+          <option value="v2.0.i14.w3">v2.0.i14.w3          </option>
+          <option value="v2.0.i15.w1">v2.0.i15.w1          </option>
+          <option value="v2.0.i15.w3">v2.0.i15.w3          </option>
+          <option value="v2.0.i16.w1">v2.0.i16.w1          </option>
+          <option value="v2.0.i16.w2" selected="selected">v2.0.i16.w2          </option>
+          <option value="v2.0.i16.w3">v2.0.i16.w3          </option>
+          <option value="v2.0.i16.w4">v2.0.i16.w4          </option>
+          <option value="v2.0.i17.w1">v2.0.i17.w1          </option>
+          <option value="v2.0.i17.w3">v2.0.i17.w3          </option>
+          <option value="v2.0.i18.w1">v2.0.i18.w1          </option>
+          <option value="v2.0.i18.w2">v2.0.i18.w2          </option>
+          <option value="v2.0.i19.w1">v2.0.i19.w1          </option>
+          <option value="V_1_1_DATE_08_09_2006_1">V_1_1_DATE_08_09_2006_1          </option>
+          <option value="V_1_1_Dec_08_2006">V_1_1_Dec_08_2006          </option>
+          <option value="V_1_1_Jan_02_2007">V_1_1_Jan_02_2007          </option>
+          <option value="V_1_1_Nov_03_2006">V_1_1_Nov_03_2006          </option>
+          <option value="V_1_1_Nov_06_2006">V_1_1_Nov_06_2006          </option>
+          <option value="V_1_1_Nov_27_2006">V_1_1_Nov_27_2006          </option>
+          <option value="V_1_1_Oct_06_2006">V_1_1_Oct_06_2006          </option>
+          <option value="V_1_1_Oct_10_2006">V_1_1_Oct_10_2006          </option>
+          <option value="V_1_1_Oct_27_2006">V_1_1_Oct_27_2006          </option>
+          <option value="V_1_1_Oct_30_2006">V_1_1_Oct_30_2006          </option>
+          <option value="V_1_1_Sep_22_2006">V_1_1_Sep_22_2006          </option>
+          <option value="V_1_1_Sep_29_2006">V_1_1_Sep_29_2006          </option>
+          <option value="wuEnhancements">wuEnhancements          </option>
+      </select>
+    </td>
+<th>
+      <a href="page.cgi?id=fields.html#bug_severity">Severity</a>:
+    </th>
+
+  <td>
+    <select name="bug_severity">
+      <option value="blocker">blocker</option>
+      <option value="critical">critical</option>
+      <option value="major">major</option>
+      <option value="normal" selected="selected">normal</option>
+      <option value="minor">minor</option>
+      <option value="trivial">trivial</option>
+      <option value="enhancement">enhancement</option>
+      <option value="change request">change request</option>
+    </select>
+  </td>
+  </tr>
+
+  <tr><th>
+      <a href="page.cgi?id=fields.html#rep_platform">Platform</a>:
+    </th>
+
+  <td>
+    <select name="rep_platform">
+      <option value="All" selected="selected">All</option>
+      <option value="DEC">DEC</option>
+      <option value="HP">HP</option>
+      <option value="Macintosh">Macintosh</option>
+      <option value="PC">PC</option>
+      <option value="SGI">SGI</option>
+      <option value="Sun">Sun</option>
+      <option value="Other">Other</option>
+    </select>
+  </td>
+  </tr>
+
+  <tr><th>
+      <a href="page.cgi?id=fields.html#op_sys">OS</a>:
+    </th>
+
+  <td>
+    <select name="op_sys">
+      <option value="Mac OS X 10.4">Mac OS X 10.4</option>
+      <option value="Mac OS X 10.5">Mac OS X 10.5</option>
+      <option value="Mac OS X 10.6">Mac OS X 10.6</option>
+      <option value="All" selected="selected">All</option>
+      <option value="Windows 3.1">Windows 3.1</option>
+      <option value="Windows 95">Windows 95</option>
+      <option value="Windows 98">Windows 98</option>
+      <option value="Windows ME">Windows ME</option>
+      <option value="Windows 2000">Windows 2000</option>
+      <option value="Windows NT">Windows NT</option>
+      <option value="Windows XP">Windows XP</option>
+      <option value="Windows Server 2003">Windows Server 2003</option>
+      <option value="Mac System 7">Mac System 7</option>
+      <option value="Mac System 7.5">Mac System 7.5</option>
+      <option value="Mac System 7.6.1">Mac System 7.6.1</option>
+      <option value="Mac System 8.0">Mac System 8.0</option>
+      <option value="Mac System 8.5">Mac System 8.5</option>
+      <option value="Mac System 8.6">Mac System 8.6</option>
+      <option value="Mac System 9.x">Mac System 9.x</option>
+      <option value="Mac OS X 10.0">Mac OS X 10.0</option>
+      <option value="Mac OS X 10.1">Mac OS X 10.1</option>
+      <option value="Mac OS X 10.2">Mac OS X 10.2</option>
+      <option value="Mac OS X 10.3">Mac OS X 10.3</option>
+      <option value="Linux">Linux</option>
+      <option value="BSD/OS">BSD/OS</option>
+      <option value="FreeBSD">FreeBSD</option>
+      <option value="NetBSD">NetBSD</option>
+      <option value="OpenBSD">OpenBSD</option>
+      <option value="AIX">AIX</option>
+      <option value="BeOS">BeOS</option>
+      <option value="HP-UX">HP-UX</option>
+      <option value="IRIX">IRIX</option>
+      <option value="Neutrino">Neutrino</option>
+      <option value="OpenVMS">OpenVMS</option>
+      <option value="OS/2">OS/2</option>
+      <option value="OSF/1">OSF/1</option>
+      <option value="Solaris">Solaris</option>
+      <option value="SunOS">SunOS</option>
+      <option value="other">other</option>
+    </select>
+  </td>
+  </tr>
+</tbody>
+
+<tbody class="expert_fields">
+  <tr><th>
+      <a href="page.cgi?id=fields.html#target_milestone">Target Milestone</a>:
+    </th>
+
+  <td>
+    <select name="target_milestone">
+      <option value="---" selected="selected">---</option>
+      <option value="V_1_1_Dec_08_2006">V_1_1_Dec_08_2006</option>
+      <option value="V_1_1_Jan02_2006">V_1_1_Jan02_2006</option>
+      <option value="V_1_1_Nov_03_2006">V_1_1_Nov_03_2006</option>
+      <option value="V_1_1_Nov_10_2006">V_1_1_Nov_10_2006</option>
+      <option value="V_1_1_Nov_17_2006">V_1_1_Nov_17_2006</option>
+      <option value="V_1_1_Nov_19_2006">V_1_1_Nov_19_2006</option>
+      <option value="V_1_1_Nov_24_2006">V_1_1_Nov_24_2006</option>
+      <option value="V_1_1_Oct_06_2006">V_1_1_Oct_06_2006</option>
+      <option value="V_1_1_Oct_13_2006">V_1_1_Oct_13_2006</option>
+      <option value="V_1_1_Oct_20_2006">V_1_1_Oct_20_2006</option>
+      <option value="V_1_1_Oct_27_2006">V_1_1_Oct_27_2006</option>
+      <option value="V_1_1_Sep_22_2006">V_1_1_Sep_22_2006</option>
+      <option value="V_1_1_Sep_29_2006">V_1_1_Sep_29_2006</option>
+      <option value="1.1.2.fc1">1.1.2.fc1</option>
+      <option value="1.1.2.fc2">1.1.2.fc2</option>
+      <option value="1.1.2.RC1">1.1.2.RC1</option>
+      <option value="Alpha-v0.1">Alpha-v0.1</option>
+      <option value="Alpha-v0.2">Alpha-v0.2</option>
+      <option value="Beta 1.0">Beta 1.0</option>
+      <option value="caTCoreV_1_2_BUILD_2">caTCoreV_1_2_BUILD_2</option>
+      <option value="caTIES_de-id patch">caTIES_de-id patch</option>
+      <option value="Final 1.0">Final 1.0</option>
+      <option value="Final 1.1">Final 1.1</option>
+      <option value="iSuitev11_S4">iSuitev11_S4</option>
+      <option value="iSuitev11_S5">iSuitev11_S5</option>
+      <option value="iSuitev11_S6">iSuitev11_S6</option>
+      <option value="iSuite_v111">iSuite_v111</option>
+      <option value="p5.0.1">p5.0.1</option>
+      <option value="pcaTissue_S1">pcaTissue_S1</option>
+      <option value="Suite v 2.0">Suite v 2.0</option>
+      <option value="Suite1.1_C1">Suite1.1_C1</option>
+      <option value="Suite1.1_C2">Suite1.1_C2</option>
+      <option value="Suite1.1_Elab">Suite1.1_Elab</option>
+      <option value="SuiteRC3">SuiteRC3</option>
+      <option value="Suitev11_RC1">Suitev11_RC1</option>
+      <option value="Suitev11_RC2">Suitev11_RC2</option>
+      <option value="Suitev11_RC3">Suitev11_RC3</option>
+      <option value="Suitev11_RC4">Suitev11_RC4</option>
+      <option value="Suite_Nov07">Suite_Nov07</option>
+      <option value="Suite_RC1">Suite_RC1</option>
+      <option value="Suite_RC2">Suite_RC2</option>
+      <option value="Suite_v1.1(Iteration">Suite_v1.1(Iteration</option>
+      <option value="V1.1 Maintenance">V1.1 Maintenance</option>
+      <option value="v1.1.1">v1.1.1</option>
+      <option value="v1.1.2.RC2">v1.1.2.RC2</option>
+      <option value="v1.2.i1.w1">v1.2.i1.w1</option>
+      <option value="v1.2.i1.w2">v1.2.i1.w2</option>
+      <option value="v1.2.i2.w1">v1.2.i2.w1</option>
+      <option value="v1.2.i2.w2">v1.2.i2.w2</option>
+      <option value="v1.2.i3.w1">v1.2.i3.w1</option>
+      <option value="v1.2.i3.w2">v1.2.i3.w2</option>
+      <option value="v1.2.i4.w1">v1.2.i4.w1</option>
+      <option value="v1.2.i5.w1">v1.2.i5.w1</option>
+      <option value="v1.2.i5.w2">v1.2.i5.w2</option>
+      <option value="v1.2.i6.w1">v1.2.i6.w1</option>
+      <option value="v1.2.KC.1">v1.2.KC.1</option>
+      <option value="v1.2.KC.2">v1.2.KC.2</option>
+      <option value="v1.2.rc1">v1.2.rc1</option>
+      <option value="v1.2.rc2">v1.2.rc2</option>
+      <option value="v1.2.rc3">v1.2.rc3</option>
+      <option value="v1.2.rc4">v1.2.rc4</option>
+      <option value="v1.2.RC5">v1.2.RC5</option>
+      <option value="v1.2.RC6">v1.2.RC6</option>
+      <option value="v1.2.wu.1">v1.2.wu.1</option>
+      <option value="v2.0">v2.0</option>
+      <option value="v2.0.FC">v2.0.FC</option>
+      <option value="v2.0.i1.w1">v2.0.i1.w1</option>
+      <option value="v2.0.i1.w2">v2.0.i1.w2</option>
+      <option value="v2.0.i1.w3">v2.0.i1.w3</option>
+      <option value="v2.0.i12.w2">v2.0.i12.w2</option>
+      <option value="v2.0.i12.w3">v2.0.i12.w3</option>
+      <option value="v2.0.i13.w1">v2.0.i13.w1</option>
+      <option value="v2.0.i13.w3">v2.0.i13.w3</option>
+      <option value="v2.0.i14.w1">v2.0.i14.w1</option>
+      <option value="v2.0.i14.w2">v2.0.i14.w2</option>
+      <option value="v2.0.i14.w3">v2.0.i14.w3</option>
+      <option value="v2.0.i15.w1">v2.0.i15.w1</option>
+      <option value="v2.0.i15.w2">v2.0.i15.w2</option>
+      <option value="v2.0.i15.w3">v2.0.i15.w3</option>
+      <option value="v2.0.i16.w1">v2.0.i16.w1</option>
+      <option value="v2.0.i16.w2">v2.0.i16.w2</option>
+      <option value="v2.0.i16.w3">v2.0.i16.w3</option>
+      <option value="v2.0.i16.w4">v2.0.i16.w4</option>
+      <option value="v2.0.i17.w1">v2.0.i17.w1</option>
+      <option value="v2.0.i17.w2">v2.0.i17.w2</option>
+      <option value="v2.0.i17.w3">v2.0.i17.w3</option>
+      <option value="v2.0.i18.w1">v2.0.i18.w1</option>
+      <option value="v2.0.i18.w2">v2.0.i18.w2</option>
+      <option value="v2.0.i19.w1">v2.0.i19.w1</option>
+      <option value="v2.0.i2.w1">v2.0.i2.w1</option>
+      <option value="v2.0.i2.w2">v2.0.i2.w2</option>
+      <option value="v2.0.i2.w3">v2.0.i2.w3</option>
+      <option value="v2.0.i3.w1">v2.0.i3.w1</option>
+      <option value="v2.0.i3.w2">v2.0.i3.w2</option>
+      <option value="v2.0.i3.w3">v2.0.i3.w3</option>
+      <option value="v2.0.i4.w1">v2.0.i4.w1</option>
+      <option value="v2.0.i4.w2">v2.0.i4.w2</option>
+      <option value="v2.0.i4.w3">v2.0.i4.w3</option>
+      <option value="v2.0.i5.w1">v2.0.i5.w1</option>
+      <option value="v2.0.i5.w2">v2.0.i5.w2</option>
+      <option value="v2.0.i5.w3">v2.0.i5.w3</option>
+      <option value="v2.0.i6.w1">v2.0.i6.w1</option>
+      <option value="v2.0.i6.w2">v2.0.i6.w2</option>
+      <option value="v2.0.i6.w3">v2.0.i6.w3</option>
+      <option value="v2.0.i7.w1">v2.0.i7.w1</option>
+      <option value="v2.0.i7.w2">v2.0.i7.w2</option>
+      <option value="v2.0.i7.w3">v2.0.i7.w3</option>
+      <option value="v2.0.i8.w1">v2.0.i8.w1</option>
+      <option value="v2.0.i8.w2">v2.0.i8.w2</option>
+      <option value="v2.0.i9.w1">v2.0.i9.w1</option>
+      <option value="v2.0.i9.w2">v2.0.i9.w2</option>
+      <option value="v2.0.i9.w3">v2.0.i9.w3</option>
+      <option value="v2.0.i9.w3.1">v2.0.i9.w3.1</option>
+      <option value="v2.0.i9.w3.2">v2.0.i9.w3.2</option>
+      <option value="v2.0.i18.w3">v2.0.i18.w3</option>
+    </select>
+  </td>
+<th>
+      <a href="page.cgi?id=fields.html#priority">Priority</a>:
+    </th>
+
+  <td>
+    <select name="priority">
+      <option value="P1">P1</option>
+      <option value="P2">P2</option>
+      <option value="P3">P3</option>
+      <option value="P4">P4</option>
+      <option value="P5" selected="selected">P5</option>
+    </select>
+  </td>
+  </tr>
+</tbody>
+
+
+<tbody class="expert_fields">
+  <tr>
+    <td colspan="4">&nbsp;</td>
+  </tr>
+
+  <tr><th>
+      <a href="page.cgi?id=fields.html#bug_status">Initial State</a>:
+    </th>
+
+  <td>
+    <select name="bug_status">
+      <option value="NEW" selected="selected">NEW</option>
+      <option value="ASSIGNED">ASSIGNED</option>
+    </select>
+  </td>
+
+    <td>&nbsp;</td>
+    
+
+    <td rowspan="10">
+    </td>
+  </tr>
+
+  <tr>
+    <th><a href="page.cgi?id=fields.html#assigned_to">Assign To</a>:</th>
+    <td colspan="2"><input
+  name="assigned_to"
+  value="" size="30" 
+>
+      <noscript>(Leave blank to assign to component's default assignee)</noscript>
+    </td>
+  </tr>
+  
+    <tr>
+      <th>QA Contact:</th>
+      <td colspan="2"><input
+  name="qa_contact"
+  value="" size="30" 
+>
+        <noscript>(Leave blank to assign to default qa contact)</noscript>
+      </td>
+    </tr>
+
+  <tr>
+    <th>CC:</th>
+    <td colspan="2"><input
+  name="cc"
+  value="" size="30" 
+>
+    </td>
+  </tr>
+
+  <tr>
+    <th>Default CC:</th>
+    <td colspan="2">
+      <div id="initial_cc">
+          <!-- This has to happen after everything above renders,
+               and onload doesn't work. So this is as good a place
+               as any to put it. -->
+          <script type="text/javascript">set_assign_to();</script>
+      </div>
+   </td>
+  </tr>
+  
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+
+  <tr>
+    <th>Estimated Hours:</th>
+    <td colspan="2">
+      <input name="estimated_time" size="6" maxlength="6" value="0.0">
+    </td>
+  </tr>
+  <tr>
+    <th>Deadline:</th>
+    <td colspan="2">
+      <input name="deadline" size="10" maxlength="10" value="">
+      <small>(YYYY-MM-DD)</small>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="3">&nbsp;</td>
+  </tr>
+
+
+  <tr>
+    <th>URL:</th>
+    <td colspan="2">
+      <input name="bug_file_loc" size="40"
+             value="http://">
+    </td>
+  </tr>
+</tbody>
+
+<tbody>
+
+    <tr><th class="field_label">
+    <label for="cf_browser">Browser:</label>
+</th>
+
+<td class="field_value" colspan="3">
+        <select id="cf_browser" 
+                name="cf_browser" 
+                >
+            <option value="---">---</option>
+            <option value="Firefox 7x">Firefox 7x</option>
+            <option value="Internet Explorer 9x">Internet Explorer 9x</option>
+            <option value="Safari 5x">Safari 5x</option>
+            <option value="Internet Explorer 8x">Internet Explorer 8x</option>
+            <option value="Firefox 4x">Firefox 4x</option>
+            <option value="Firefox 5x">Firefox 5x</option>
+            <option value="Internet Explorer 7x">Internet Explorer 7x</option>
+            <option value="Safari 4x">Safari 4x</option>
+            <option value="Firefox 3x">Firefox 3x</option>
+        </select>
+        
+</td>
+    </tr>
+    <tr><th class="field_label">
+    <label for="cf_requirement">Requirement Traceability Tag:</label>
+</th>
+
+<td class="field_value" colspan="3">
+        <input id="cf_requirement" name="cf_requirement"
+               value="" size="40"
+               maxlength="255">
+</td>
+    </tr>
+    <tr><th class="field_label">
+    <label for="cf_source">Bug source:</label>
+</th>
+
+<td class="field_value" colspan="3">
+        <select id="cf_source" 
+                name="cf_source" 
+                >
+            <option value="---">---</option>
+            <option value="BO Testing">BO Testing</option>
+            <option value="caTissue KC">caTissue KC</option>
+            <option value="Dev testing">Dev testing</option>
+            <option value="JUnits">JUnits</option>
+            <option value="Manual testing">Manual testing</option>
+            <option value="Production">Production</option>
+            <option value="Review">Review</option>
+            <option value="Struts testing">Struts testing</option>
+        </select>
+        
+</td>
+    </tr>
+
+  <tr>
+    <th>Summary:</th>
+    <td colspan="3">
+      <input name="short_desc" size="70" value=""
+             maxlength="255" spellcheck="true">
+    </td>
+  </tr>
+
+  <tr>
+    <th>Description:</th>
+    <td colspan="3"><textarea name="comment" id="comment"
+            rows="10"
+          cols="80"
+            onFocus="this.rows=25"></textarea>
+      <br>
+    </td>
+  </tr>
+
+</tbody>
+
+<tbody class="expert_fields">
+  <tr>
+    <th>Attachment:</th>
+    <td colspan="3">
+      <script type="text/javascript">
+        <!--
+        document.write( '<div id="attachment_false">'
+                      +   '<input type="button" value="Add an attachment" '
+                      +          'onClick="handleWantsAttachment(true)"> '
+                      +   '<em style="display: none">This button has no '
+                      +   'functionality for you because your browser does '
+                      +   'not support CSS or does not use it.<\/em>'
+                      + '<\/div>'
+                      + '<div id="attachment_true" style="display: none">'
+                      +   '<input type="button" '
+                      +          'value="Don\'t add an attachment " '
+                      +          'onClick="handleWantsAttachment(false)">');
+        //-->
+      </script>
+        <fieldset>
+          <legend>Add an attachment</legend>
+          <table class="attachment_entry"><tr>
+  <th><label for="data">File</label>:</th>
+  <td>
+    <em>Enter the path to the file on your computer.</em><br>
+    <input type="file" id="data" name="data" size="50"
+        onchange="DataFieldHandler()" 
+    >
+  </td>
+</tr>
+<tr>
+  <th><label for="attachurl">AttachURL</label>:</th>
+  <td>
+    <em>URL to be attached instead.</em><br>
+    <input type="text" id="attachurl" name="attachurl" size="60" 
+           maxlength="2000"
+           onkeyup="URLFieldHandler()" onblur="URLFieldHandler()">
+  </td>
+</tr>
+<tr>
+  <th><label for="description">Description</label>:</th>
+  <td>
+    <em>Describe the attachment briefly.</em><br>
+    <input type="text" id="description" name="description" size="60" maxlength="200">
+  </td>
+</tr>
+<tr>
+  <th>Content Type:</th>
+  <td>
+    <em>If the attachment is a patch, check the box below.</em><br>
+    <input type="checkbox" id="ispatch" name="ispatch" value="1"
+           onchange="setContentTypeDisabledState(this.form);">
+    <label for="ispatch">patch</label><br><br>
+
+    <em>Otherwise, choose a method for determining the content type.</em><br>
+    <input type="radio" id="autodetect"
+           name="contenttypemethod" value="autodetect" checked="checked">
+      <label for="autodetect">auto-detect</label><br>
+    <input type="radio" id="list"
+           name="contenttypemethod" value="list">
+      <label for="list">select from list</label>:
+      <select name="contenttypeselection" id="contenttypeselection"
+              onchange="this.form.contenttypemethod[1].checked = true;"><option value="text/plain">plain text (text/plain)</option>
+          <option value="text/html">HTML source (text/html)</option>
+          <option value="application/xml">XML source (application/xml)</option>
+          <option value="image/gif">GIF image (image/gif)</option>
+          <option value="image/jpeg">JPEG image (image/jpeg)</option>
+          <option value="image/png">PNG image (image/png)</option>
+          <option value="application/octet-stream">binary file (application/octet-stream)</option>
+      </select><br>
+    <input type="radio" id="manual"
+                 name="contenttypemethod" value="manual">
+      <label for="manual">enter manually</label>:
+      <input type="text" name="contenttypeentry" id="contenttypeentry"
+             size="30" maxlength="200"
+             onchange="if (this.value) this.form.contenttypemethod[2].checked = true;">
+  </td>
+</tr>
+<tr>
+  <td> </td>
+  <td>
+  </td>
+</tr>
+          </table>
+        </fieldset>
+      <script type="text/javascript">
+        <!--
+        document.write('<\/div>');
+        //-->
+      </script>
+    </td>
+  </tr>
+
+      <tr>
+        <th><a href="describekeywords.cgi">Keywords</a>:</th>
+        <td colspan="3">
+          <input id="keywords" name="keywords" size="40"
+                 value=""> (optional)
+        </td>
+      </tr>
+
+    <tr>
+      <th>Depends on:</th>
+      <td colspan="3">
+        <input name="dependson" accesskey="d" value="">
+      </td>
+    </tr>
+    <tr>
+      <th>Blocks:</th>
+      <td colspan="3">
+        <input name="blocked" accesskey="b" value="">
+      </td>
+    </tr>
+</tbody>
+
+<tbody>
+
+  
+
+  <tr>
+    <th>&nbsp;</th>
+    <td colspan="3">
+      <input type="submit" id="commit" value="Commit"
+             onclick="if (this.form.short_desc.value == '')
+             { alert('Please enter a summary sentence for this bug.');
+               return false; } return true;">
+      &nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="submit" name="maketemplate" id="maketemplate"
+             value="Remember values as bookmarkable template"
+             class="expert_fields">
+    </td>
+  </tr>
+</tbody>
+  </table>
+  <input type="hidden" name="form_name" value="enter_bug">
+</form>
+
+
+</div>
+
+
+
+<div id="footer">
+  <div class="intro"></div>
+
+
+
+
+<ul id="useful-links">
+  <li id="links-actions">
+    <div class="label">Actions: </div><ul class="links">
+  <li><a href="./">Home</a></li>
+  <li><span class="separator">| </span><a href="enter_bug.cgi">New</a></li>
+  <li><span class="separator">| </span><a href="query.cgi">Search</a></li>
+
+  <li class="form">
+    <span class="separator">| </span>
+    <form action="buglist.cgi" method="get"
+        onsubmit="if (this.quicksearch.value == '')
+                  { alert('Please enter one or more search terms first.');
+                    return false; } return true;">
+    <input class="txt" type="text" id="quicksearch_bottom" name="quicksearch">
+    <input class="btn" type="submit" value="Find" id="find_bottom"></form></li>
+
+  <li><span class="separator">| </span><a href="report.cgi">Reports</a></li>
+
+  <li></li>
+
+
+    <li><span class="separator">| </span><a href="userprefs.cgi">Preferences</a></li>
+      <li><span class="separator">| </span><a href="admin.cgi">Administration</a></li>
+<li>
+        <span class="separator">| </span>
+        <a href="docs/en/html/bugreports.html" target="_blank">Help</a>
+      </li>
+
+    <li>
+      <span class="separator">| </span>
+        <a href="relogin.cgi">Log&nbsp;out</a>
+        forei&#64;mail.nih.gov</li>
+</ul>
+  </li>
+
+  
+    
+    <li id="links-saved">
+      <div class="label">
+        Saved Searches:
+      </div>
+      <ul class="links">
+          <li><a href="buglist.cgi?bug_status=UNCONFIRMED&amp;bug_status=NEW&amp;bug_status=ASSIGNED&amp;bug_status=REOPENED&amp;emailassigned_to1=1&amp;emailreporter1=1&amp;emailtype1=exact&amp;email1=forei%40mail.nih.gov&amp;field0-0-0=bug_status&amp;type0-0-0=notequals&amp;value0-0-0=UNCONFIRMED&amp;field0-0-1=reporter&amp;type0-0-1=equals&amp;value0-0-1=forei%40mail.nih.gov">My Bugs</a></li>
+
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Build%20issues">Build issues</a></li>
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=C1%20and%20C2%20and%20no%20target">C1 and C2 and no target</a></li>
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=New%20caTissue%20since%201-Jul-10">New caTissue since 1-Jul-10</a></li>
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=pile%201">pile 1</a></li>
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=SPP">SPP</a></li>
+            <li><span class="separator">| </span>
+            <a href="buglist.cgi?cmdtype=runnamed&amp;namedcmd=Suite%20P1P2%20not%20fixed">Suite P1P2 not fixed</a></li>
+      </ul>
+    </li>
+
+  
+
+
+  
+</ul>
+
+  <div class="outro"></div>
+</div>
+
+</body>
+</html>
