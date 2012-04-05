@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version last-->
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Leaf Green" language="groovy" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20">
-	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter "/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="local TMT"/>
 	<style name="Title" fontName="Arial" fontSize="26" isBold="true" pdfFontName="Helvetica-Bold"/>
 	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
 	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12" isBold="true"/>
@@ -10,7 +10,9 @@
 		<![CDATA[SELECT distinct 
     m.identifier,
     m.master_name,
-    testcycle_desc
+    testcycle_desc,
+    testcycle_start_date,
+    testcycle_end_date
 FROM
     master_plan m, testplan_new p, testplan x,
     testcycle_info c, testresult r
@@ -22,6 +24,8 @@ order by master_name]]>
 	</queryString>
 	<field name="master_name" class="java.lang.String"/>
 	<field name="testcycle_desc" class="java.lang.String"/>
+	<field name="testcycle_start_date" class="java.sql.Date"/>
+	<field name="testcycle_end_date" class="java.sql.Date"/>
 	<group name="master_name" isStartNewPage="true">
 		<groupExpression><![CDATA[$F{master_name}]]></groupExpression>
 		<groupHeader>
@@ -37,18 +41,18 @@ order by master_name]]>
 	<title>
 		<band height="70" splitType="Stretch">
 			<image>
-				<reportElement x="275" y="0" width="300" height="64"/>
-				<imageExpression><![CDATA["leaf_banner_green.png"]]></imageExpression>
+				<reportElement x="337" y="3" width="215" height="64"/>
+				<imageExpression><![CDATA["catissue_suite_logo.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement style="Title" x="0" y="13" width="263" height="33"/>
 				<textElement verticalAlignment="Middle"/>
-				<text><![CDATA[Leaf Green Title]]></text>
+				<text><![CDATA[Master plan cycles]]></text>
 			</staticText>
 			<staticText>
 				<reportElement style="SubTitle" x="100" y="46" width="174" height="22"/>
 				<textElement/>
-				<text><![CDATA[Leaf Green SubTitle]]></text>
+				<text><![CDATA[TMT Reports]]></text>
 			</staticText>
 		</band>
 	</title>
@@ -57,6 +61,16 @@ order by master_name]]>
 	</pageHeader>
 	<columnHeader>
 		<band height="98" splitType="Stretch">
+			<staticText>
+				<reportElement style="Column header" x="0" y="74" width="130" height="15"/>
+				<textElement/>
+				<text><![CDATA[test cycle]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="0" y="74" width="130" height="15"/>
+				<textElement/>
+				<text><![CDATA[test cycle]]></text>
+			</staticText>
 			<line>
 				<reportElement positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1"/>
 				<graphicElement>
@@ -64,20 +78,27 @@ order by master_name]]>
 				</graphicElement>
 			</line>
 			<staticText>
-				<reportElement style="Column header" x="0" y="74" width="555" height="15"/>
+				<reportElement style="Column header" x="0" y="74" width="130" height="15"/>
 				<textElement/>
-				<text><![CDATA[testcycle_desc]]></text>
+				<text><![CDATA[test cycle]]></text>
 			</staticText>
 			<textField>
-				<reportElement style="SubTitle" x="47" y="37" width="506" height="24" forecolor="#006600"/>
+				<reportElement style="SubTitle" x="70" y="37" width="433" height="24" forecolor="#006600"/>
 				<textElement>
 					<font isBold="true"/>
 				</textElement>
 				<textFieldExpression><![CDATA[$F{master_name}]]></textFieldExpression>
 			</textField>
-			<rectangle>
-				<reportElement mode="Opaque" x="0" y="37" width="36" height="24" forecolor="#CCCCCC" backcolor="#CCCCCC"/>
-			</rectangle>
+			<staticText>
+				<reportElement style="Column header" x="320" y="74" width="130" height="15"/>
+				<textElement/>
+				<text><![CDATA[start date]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="Column header" x="0" y="42" width="130" height="15"/>
+				<textElement/>
+				<text><![CDATA[Plan name]]></text>
+			</staticText>
 		</band>
 	</columnHeader>
 	<detail>
@@ -89,9 +110,19 @@ order by master_name]]>
 				</graphicElement>
 			</line>
 			<textField>
-				<reportElement style="Detail" x="0" y="0" width="555" height="15"/>
+				<reportElement style="Detail" x="0" y="0" width="370" height="15"/>
 				<textElement/>
 				<textFieldExpression><![CDATA[$F{testcycle_desc}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="320" y="0" width="112" height="15"/>
+				<textElement textAlignment="Left"/>
+				<textFieldExpression><![CDATA[$F{testcycle_start_date}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement style="Detail" x="440" y="0" width="112" height="15"/>
+				<textElement/>
+				<textFieldExpression><![CDATA[$F{testcycle_end_date}]]></textFieldExpression>
 			</textField>
 		</band>
 	</detail>
