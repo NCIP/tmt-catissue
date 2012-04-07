@@ -107,7 +107,7 @@ tp_name varchar(50),
 master_id int(10),
 master_name varchar(50));
 
-//Load testplan_new first before the next step
+/* Load testplan_new first before the next step */
 create table master_plan as
 SELECT
    min(identifier) identifier, master_name

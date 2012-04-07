@@ -1,12 +1,9 @@
 create or replace view scenario_browser as select scenario_id, value browser from platform_value v, scenario s where type_id = 3 and s.value_id = v.identifier;
 create or replace view scenario_cagrid as select scenario_id, value cagrid from platform_value v, scenario s where type_id = 11 and s.value_id = v.identifier;
-create or replace view scenario_cider-linux as select scenario_id, value cider-linux from platform_value v, scenario s where type_id = 14 and s.value_id = v.identifier;
-create or replace view scenario_cider-mac as select scenario_id, value cider-mac from platform_value v, scenario s where type_id = 13 and s.value_id = v.identifier;
-create or replace view scenario_cider-win as select scenario_id, value cider-win from platform_value v, scenario s where type_id = 12 and s.value_id = v.identifier;
 create or replace view scenario_clientos as select scenario_id, value clientos from platform_value v, scenario s where type_id = 4 and s.value_id = v.identifier;
 create or replace view scenario_dbms as select scenario_id, value dbms from platform_value v, scenario s where type_id = 2 and s.value_id = v.identifier;
 create or replace view scenario_java as select scenario_id, value java from platform_value v, scenario s where type_id = 10 and s.value_id = v.identifier;
-create or replace view scenario_macsafari5.0.1 as select scenario_id, value macsafari5.0.1 from platform_value v, scenario s where type_id = 16 and s.value_id = v.identifier;
+create or replace view scenario_macsafari as select scenario_id, value macsafari from platform_value v, scenario s where type_id = 16 and s.value_id = v.identifier;
 create or replace view scenario_os as select scenario_id, value os from platform_value v, scenario s where type_id = 1 and s.value_id = v.identifier;
 create or replace view scenario_serveros as select scenario_id, value serveros from platform_value v, scenario s where type_id = 5 and s.value_id = v.identifier;
 create or replace view scenario_test_key as select scenario_id, value test_key from platform_value v, scenario s where type_id = 8 and s.value_id = v.identifier;
