@@ -1,3 +1,7 @@
+/*
+This will list caTissue "test plans" and the "test cycles" in which those plans were run or
+scheduled
+*/
 SELECT
     distinct
     TP_Name,

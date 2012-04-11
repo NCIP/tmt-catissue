@@ -1,5 +1,8 @@
-SELECT
-    distinct
+/*
+This will list any "test cycle" in which a script was run or
+scheduled as part of a caTissue "test plan"
+*/
+    select distinct
     testcycle_id,
     testcycle_desc
 FROM
