@@ -2,7 +2,8 @@ SELECT
     distinct
     TP_Name,
     TP_Desc,
-    testcycle_id
+    testcycle_id,
+    testcycle_desc
 FROM
     catissue_plan p,
     testplan tp,
