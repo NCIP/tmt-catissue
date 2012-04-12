@@ -1,15 +1,14 @@
 /*
-This will list caTissue "test plans" and the "test cycles" in which those plans were run or
+This will list caTissue "master test plans" and the "test cycles" in which those plans were run or
 scheduled
 */
 SELECT
     distinct
-    TP_Name,
-    TP_Desc,
+    master_Name,
     testcycle_id,
     testcycle_desc
 FROM
-    catissue_plan p,
+    testplan_new p,
     testplan tp,
     testresult tr,
     testcycle_info tc

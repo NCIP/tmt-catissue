@@ -1,6 +1,6 @@
 /*
 This lists entries from the testresult table showing result status and 
-plan and cycle information.
+master plan and cycle information.
 Note that the testresult table contains rows that represent tests 
 that have been scheduled but not yet run.
 These tests are scheduled when a test set is created.
@@ -12,14 +12,14 @@ SELECT tcycle.identifier testcycle, tcycle.testcycle_desc, tcycle.testcycle_star
     tc.tc_details ,
     result.execution_date ,
     result.result ,
-    tpinfo.tp_name,
-    concat(tpinfo.identifier,'_',tcycle.identifier) test_set
+    tpi.master_name master_plan,
+    concat(tpi.master_id,'_',tcycle.identifier) test_set
 FROM 
     testresult result ,
     testplan tp,
+    testplan_new tpi,
     testcase_info tc,
-    testcycle_info tcycle,
-    catissue_plan tpinfo
+    testcycle_info tcycle 
 where
 
     result.testcycle_id=tcycle.identifier 
@@ -28,7 +28,7 @@ and
 and 
     result.tpr_id=tp.identifier
 and
-    tp.tp_id=tpinfo.identifier
+    tp.tp_id=tpi.identifier
 
 
 
