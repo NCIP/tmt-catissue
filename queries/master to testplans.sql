@@ -1,5 +1,5 @@
 SELECT
-    unique_name master_plan,
+    master_name master_plan,
     tp_id,
     AUTO_ID
 FROM
