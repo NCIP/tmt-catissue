@@ -30,9 +30,9 @@ FROM
 version_info v, component_info c,
 product_info p
 where prod_name = 'caTissue' 
-and c.identifier = comp_id
-and v.identifier = ver_id
-and p.identifier = prod_id;
+and c.identifier = ta.comp_id
+and v.identifier = c.ver_id
+and p.identifier = v.prod_id;
 
 create or replace view catissue_plan_xref as
 SELECT
@@ -60,6 +60,22 @@ where identifier in
 create table scenario2 as 
 select * from scenario_info;
 
+create or replace view testresult_view as
+SELECT
+    r.IDENTIFIER,
+    TestCycle_desc,
+    tp_name,
+    r.Auto_ID,
+    TestEngg_ID,
+    Execution_Comment,
+    Result,
+    Execution_Date
+FROM
+    testresult r, testcycle_info cy, testplan p, testplan_info pi
+    where TPR_ID = p.identifier
+    and tp_id = pi.identifier
+    and cy.identifier = TestCycle_ID;
+
 
 alter table scenario2  
 add os varchar(50),  
@@ -78,6 +94,11 @@ org_name varchar(255)
 create table build (
 build_id int(10),
 build_name varchar(255)
+);
+
+create table cycle_build (
+testcycle_id int(10),
+build_id int(10)
 );
 
 create table person_org (
