@@ -1,7 +1,7 @@
-Welcome to the TMT caTissue!
+Welcome to TMT caTissue!
 =====================================
 
-TBD
+An important aspect of caTissue is the body of test scripts and the results of running those scripts on various builds. This provides a means of testing caTissue to those who wish to check the impact of modifications they make to the applications. The scripts and other data are held in a MySQL database. TMT-caTissue project supplements the Test Management Tool (TMT) with data transformations and report generation to help review the status of testing. 
 
 The TMT caTissue is distributed under the BSD 3-Clause License.
 Please see the NOTICE and LICENSE files for details.
