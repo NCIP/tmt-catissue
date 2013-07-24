@@ -12,4 +12,4 @@ You will find more details about the TMT caTissue in the following links:
  * [Issue Tracker] (https://tracker.nci.nih.gov/browse/TMTCATISSUE)
  * [Code Repository] (https://github.com/NCIP/tmt-catissue)
 
-Please join us in further developing and improving the TMT caTissue.
+Please join us in further developing and improving the TMT caTissue project.
