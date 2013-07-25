@@ -8,7 +8,6 @@ Please see the NOTICE and LICENSE files for details.
 
 You will find more details about the TMT caTissue in the following links:
 
- * [NCI OSDI] (https://wiki.nci.nih.gov/display/caBIGCommunityCode/CBIIT+Open+Source+Development+Initiative)
  * [Issue Tracker] (https://tracker.nci.nih.gov/browse/TMTCATISSUE)
  * [Code Repository] (https://github.com/NCIP/tmt-catissue)
 
